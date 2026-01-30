@@ -1,0 +1,51 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+
+.rounded-3{
+	height: 290px;
+	width: 290px;
+}
+.col-lg-4{
+	text-align: center;
+	margin: auto;
+	
+
+}
+.logo-default{
+	width: 100px;
+}
+.section{
+	width: 100%;
+	
+}
+
+
+*{
+	color: #51111F;
+}
+*{
+	
+	letter-spacing: 2px;
+}
+.fw-normal{
+
+	color: #51111F;
+}
+a.canvas-button.mt-5{
+	color: white;
+
+}
+
+.border-bottom , .border-width-2  , .border-warning{
+	color: #BF012C;
+}
+.product{
+	width: 90%;
+	
+
+}
