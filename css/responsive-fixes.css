@@ -48,6 +48,8 @@
         height: 200px;
         object-fit: cover;
         border-radius: 8px;
+        width: 100%;
+        max-width: 100%;
     }
     
     /* Product descriptions */
@@ -108,6 +110,9 @@
     /* Product images */
     .product-image img {
         height: 180px;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
     }
     
     /* Product text */
@@ -137,6 +142,9 @@
     /* Product images for very small screens */
     .product-image img {
         height: 160px;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
     }
     
     /* Product titles */
@@ -194,5 +202,89 @@
     .owl-prev, .owl-next {
         min-width: 44px;
         min-height: 44px;
+    }
+}
+
+/* Additional Image Fixes for All Pages */
+
+/* Hero Section Background Images */
+.slider-inner {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Cascading Images */
+.cascading-image img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Instagram Section Images */
+.row-cols-3 img,
+.row-cols-2 img,
+.row-cols-5 img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+}
+
+/* Product Carousel Images */
+.product-image {
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: cover !important;
+    transition: transform 0.3s ease;
+}
+
+/* Video Section */
+video {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+}
+
+/* Target Content Images */
+.target-content img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+}
+
+/* Mobile Image Optimizations */
+@media (max-width: 767.98px) {
+    .product-image img {
+        height: 250px !important;
+    }
+    
+    .cascading-image img {
+        max-height: 200px !important;
+    }
+    
+    .slider-inner {
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .product-image img {
+        height: 200px !important;
+    }
+    
+    .cascading-image img {
+        max-height: 150px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .product-image img {
+        height: 180px !important;
     }
 }

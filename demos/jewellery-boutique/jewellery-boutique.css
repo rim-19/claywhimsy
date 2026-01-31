@@ -442,6 +442,59 @@ body:not(.top-search-open) #top-search a i:nth-child(2) {
 	height: 10px;
 }
 
+/* Arabic Button Removed - Responsive Fixes Applied */
+
+/* Enhanced Image Display */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Product Image Specific Fixes */
+.product-image img {
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: cover !important;
+}
+
+/* Instagram Grid Images */
+.row-cols-3 img,
+.row-cols-2 img,
+.row-cols-5 img {
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover !important;
+}
+
+/* Hero Background */
+.slider-inner {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Cascading Images */
+.cascading-image img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Target Content Images */
+.target-content img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+}
+
+/* Video */
+video {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+}
+
 @media (min-width: 992px) {
 	.owl-stage {
 	    right: -50px;
