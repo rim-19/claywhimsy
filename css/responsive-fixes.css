@@ -205,6 +205,34 @@
     }
 }
 
+/* Video Section Fixes */
+.video-wrap {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.video-wrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-wrap .position-absolute {
+    z-index: 2;
+    pointer-events: none;
+}
+
+.video-wrap .position-absolute h2 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    font-weight: 600;
+}
+
 /* Additional Image Fixes for All Pages */
 
 /* Hero Section Background Images */
@@ -271,6 +299,17 @@ video {
         background-size: cover !important;
         background-position: center center !important;
     }
+    
+    /* Video Mobile Fixes */
+    .video-wrap {
+        height: 60vh;
+        min-height: 300px;
+    }
+    
+    .video-wrap .position-absolute h2 {
+        font-size: 1.5rem !important;
+        padding: 0 1rem;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -281,10 +320,32 @@ video {
     .cascading-image img {
         max-height: 150px !important;
     }
+    
+    /* Video Small Mobile Fixes */
+    .video-wrap {
+        height: 50vh;
+        min-height: 250px;
+    }
+    
+    .video-wrap .position-absolute h2 {
+        font-size: 1.25rem !important;
+        padding: 0 0.5rem;
+    }
 }
 
 @media (max-width: 400px) {
     .product-image img {
         height: 250px !important;
+    }
+    
+    /* Video Ultra Small Fixes */
+    .video-wrap {
+        height: 40vh;
+        min-height: 200px;
+    }
+    
+    .video-wrap .position-absolute h2 {
+        font-size: 1.1rem !important;
+        padding: 0 0.5rem;
     }
 }
