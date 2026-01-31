@@ -453,7 +453,7 @@ img {
 /* Product Image Specific Fixes */
 .product-image img {
     width: 100% !important;
-    height: 300px !important;
+    height: 400px !important;
     object-fit: cover !important;
 }
 
@@ -658,7 +658,7 @@ video {
 	}
 	
 	.product-image img {
-		height: 250px;
+		height: 320px;
 		object-fit: cover;
 	}
 	
