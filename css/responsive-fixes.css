@@ -1,164 +1,65 @@
-/* Responsive Fixes for Product Page */
-
-/* Product Page Specific Responsive Styles */
-@media (max-width: 991.98px) {
-    /* Fix absolute positioned sections on product page */
-    .section[style*="position: absolute"] {
-        position: relative !important;
-        left: 0 !important;
-        bottom: auto !important;
-        margin-bottom: 3rem;
-        padding: 2rem 1rem;
-    }
-    
-    /* Product section titles */
-    h2[style*="position: absolute"] {
-        position: relative !important;
-        top: 0 !important;
-        left: 0 !important;
-        text-align: center !important;
-        margin-bottom: 2rem;
-        padding: 0 1rem;
-    }
-    
-    /* Product carousel adjustments */
-    .product-carousel {
-        padding: 0 1rem;
-    }
-    
-    .owl-stage-outer {
-        padding: 0 15px;
-    }
+/* Responsive layout foundations */
+.homepage-feature-row {
+    row-gap: 2rem;
 }
 
-@media (max-width: 767.98px) {
-    /* Stack product sections vertically */
-    .section[style*="position: absolute"] {
-        margin-bottom: 2rem;
-    }
-    
-    /* Product titles */
-    h2[style*="position: absolute"] {
-        font-size: 1.5rem !important;
-        margin-bottom: 1.5rem;
-    }
-    
-    /* Product images */
-    .product-image img {
-        height: 300px;
-        object-fit: cover;
-        border-radius: 8px;
-        width: 100%;
-        max-width: 100%;
-    }
-    
-    /* Product descriptions */
-    .product-title h4 {
-        font-size: 1rem !important;
-        line-height: 1.2;
-    }
-    
-    .product-price {
-        font-size: 0.9rem;
-    }
-    
-    /* Carousel navigation */
-    .owl-nav {
-        display: block !important;
-    }
-    
-    .owl-prev, .owl-next {
-        background: rgba(0,0,0,0.5) !important;
-        color: white !important;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    
-    .owl-prev {
-        left: 10px;
-    }
-    
-    .owl-next {
-        right: 10px;
-    }
+.homepage-gallery-column,
+.homepage-feature-copy {
+    width: 100%;
 }
 
-@media (max-width: 575.98px) {
-    /* Product sections */
-    .section[style*="position: absolute"] {
-        padding: 1.5rem 0.5rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    /* Product titles */
-    h2[style*="position: absolute"] {
-        font-size: 1.25rem !important;
-        padding: 0 0.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    h2[style*="left: 30%"],
-    h2[style*="left: 32.5%"] {
-        left: 0 !important;
-        text-align: center !important;
-    }
-    
-    /* Product images */
-    .product-image img {
-        height: 280px;
-        width: 100%;
-        max-width: 100%;
-        object-fit: cover;
-    }
-    
-    /* Product text */
-    .product-title h4 {
-        font-size: 0.9rem !important;
-    }
-    
-    .product-title small {
-        font-size: 0.7rem !important;
-    }
-    
-    .product-price {
-        font-size: 0.85rem;
-    }
-    
-    /* Carousel adjustments */
-    .product-carousel {
-        padding: 0 0.5rem;
-    }
-    
-    .owl-stage-outer {
-        padding: 0 10px;
-    }
+.about-copy {
+    text-align: center;
 }
 
-@media (max-width: 400px) {
-    /* Product images for very small screens */
-    .product-image img {
-        height: 250px;
-        width: 100%;
-        max-width: 100%;
-        object-fit: cover;
-    }
-    
-    /* Product titles */
-    h2[style*="position: absolute"] {
-        font-size: 1.1rem !important;
-    }
-    
-    .product-title h4 {
-        font-size: 0.85rem !important;
-    }
-    
-    .product-price {
-        font-size: 0.8rem;
-    }
+.about-cta-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.about-cta-text {
+    color: black;
+    font-family: ivymode, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.about-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.products-page {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.product-showcase-section {
+    padding: 2rem 0;
+}
+
+.product-showcase-copy {
+    position: sticky;
+    top: 8rem;
+}
+
+.product-showcase-title {
+    margin-bottom: 1rem;
+    color: #51111F;
+    line-height: 1.15;
+}
+
+.product-showcase-text {
+    margin: 0;
+    color: #51111F;
+    font-family: tenon, sans-serif;
+    letter-spacing: 0.08em;
 }
 
 /* Ensure animations work on mobile */
@@ -285,8 +186,46 @@ video {
     object-fit: cover !important;
 }
 
+@media (max-width: 991.98px) {
+    .product-showcase-copy {
+        position: static;
+        text-align: center;
+        max-width: 42rem;
+        margin: 0 auto;
+    }
+
+    .product-carousel {
+        padding: 0 1rem;
+    }
+
+    .owl-stage-outer {
+        padding: 0 15px;
+    }
+}
+
 /* Mobile Image Optimizations */
 @media (max-width: 767.98px) {
+    .homepage-gallery-column .cascading-images {
+        max-width: 24rem;
+        margin: 0 auto;
+    }
+
+    .about-copy {
+        padding: 0 1rem;
+    }
+
+    .about-secondary-image {
+        display: block !important;
+    }
+
+    .products-page {
+        padding-top: 5rem;
+    }
+
+    .product-showcase-section {
+        padding: 1.5rem 0;
+    }
+
     .product-image img {
         height: 320px !important;
     }
@@ -310,9 +249,47 @@ video {
         font-size: 1.5rem !important;
         padding: 0 1rem;
     }
+
+    .owl-nav {
+        display: block !important;
+    }
+
+    .owl-prev,
+    .owl-next {
+        background: rgba(0,0,0,0.5) !important;
+        color: white !important;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .owl-prev {
+        left: 10px;
+    }
+
+    .owl-next {
+        right: 10px;
+    }
 }
 
 @media (max-width: 575.98px) {
+    .homepage-gallery-column .cascading-image {
+        padding: 0.5rem !important;
+    }
+
+    .homepage-feature-copy,
+    .product-showcase-copy {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .product-showcase-title {
+        font-size: 1.6rem;
+    }
+
     .product-image img {
         height: 280px !important;
     }
@@ -331,9 +308,23 @@ video {
         font-size: 1.25rem !important;
         padding: 0 0.5rem;
     }
+
+    .about-cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-cta-actions .canvas-button {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
+    .product-showcase-title {
+        font-size: 1.35rem;
+    }
+
     .product-image img {
         height: 250px !important;
     }
